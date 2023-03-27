@@ -1,6 +1,6 @@
 
 // funcion que pueda contar por cada elemento un numero
- 
+console.log("Hola mundo")
 function cantidadElemento(arr, numero){
     let res = 0;
     for (let i = 0; i < arr.length; i++) {
