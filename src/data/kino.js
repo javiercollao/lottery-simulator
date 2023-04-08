@@ -51,13 +51,13 @@ const kinoHistorical = [
     },
     {
         id: 2735,
-        date : "plantilla",
-        kino:[],
-        reKino: [],
-        chanchitoRegalon: [],
-        comboMarraqueta: [],
-        chaoJefe1 : [],
-        chaoJefe2: []
+        date : "24/03/2023",
+        kino:[4,7,8,9,10,14,15,16,17,19,20,21,22,23],
+        reKino: [1,3,4,5,6,10,13,16,17,18,19,20,21,25],
+        chanchitoRegalon: [1,3,5,8,9,11,12,14,17,19,20,22,23,24],
+        comboMarraqueta: [2,3,5,6,7,9,11,13,15,16,17,19,20,22],
+        chaoJefe1 : [1,2,5,7,8,12,13,14,16,17,20,21,22,25],
+        chaoJefe2: [1,2,3,5,6,7,15,16,17,8,19,20,21,25]
     },
     {
         id: 2734,
