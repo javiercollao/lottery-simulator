@@ -31,10 +31,23 @@
     -webkit-border-radius: 100%;
 }
 
+.bola{
+    width: 45px;
+    height: 45px;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: bold; 
+}
+.bola-mini{
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 10pxs;
+}
 .numeros{
     padding: 0;
 }
-
 
 .numeros{
     padding: 0 240px 0 240px;
@@ -49,13 +62,15 @@
     justify-content: center;
 }
 
-@media only screen and (min-width: 600px) {
-    
-    .bola{
-        width: 45px;
-        height: 45px;
-        line-height: 1.5;
-        font-size: 30px;
-        font-weight: bold; 
-    }
-  }
+.numeros-tabla{
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.numeros-tabla li{
+    margin: 0 10px;
+}
+
+
+ 
