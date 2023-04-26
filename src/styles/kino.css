@@ -72,5 +72,17 @@
     margin: 0 10px;
 }
 
+.bg-carton{
+    background-color: #fe0a00;
+}
+
+.bola-noSeleccionada{
+    background-color: #fff;
+    background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#57f4f2));
+    background-image: -webkit-radial-gradient(circle, #fff, #57f4f2);
+    background-image: -moz-radial-gradient(circle, #fff, #57f4f2);
+    background-image: -o-radial-gradient(circle, #fff, #57f4f2);
+    background-image: radial-gradient(circle, #fff, #57f4f2);
+}
 
  
