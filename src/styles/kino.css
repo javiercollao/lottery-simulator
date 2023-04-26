@@ -1,0 +1,62 @@
+
+
+.bola{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: black;
+    line-height: 26px; 
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 2px 0 0;
+    cursor: default;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    background-size: 100% 100%;
+    background-color: #dec023;
+    background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#fbf371), to(#dec023));
+    background-image: -webkit-radial-gradient(circle, #fbf371, #dec023);
+    background-image: -moz-radial-gradient(circle, #fbf371, #dec023);
+    background-image: -o-radial-gradient(circle, #fbf371, #dec023);
+    background-image: radial-gradient(circle, #fbf371, #dec023);
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+.numeros{
+    padding: 0;
+}
+
+
+.numeros{
+    padding: 0 240px 0 240px;
+    list-style: none;
+    display: grid;
+	grid-template-columns: repeat(7,minmax(25px,1fr));
+	grid-gap: 1.2rem;
+}
+
+.numeros li{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .bola{
+        width: 45px;
+        height: 45px;
+        line-height: 1.5;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0px 3px 20px 3px;
+    }
+  }
