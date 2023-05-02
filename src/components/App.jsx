@@ -1,7 +1,14 @@
 import React from 'react'
+import NavbarKino from './NavbarKino'
+import NumbersBox from './NumbersBox'
 
 export default function App() {
   return (
-    <div>App</div>
+    <>
+        <NavbarKino />
+        <NumbersBox content="main"/> 
+        <NumbersBox content="consecutive"/>
+        <NumbersBox content="alone"/>
+    </>
   )
 }

@@ -76,6 +76,10 @@
     background-color: #fe0a00;
 }
 
+.bg-grey{
+    background-color: #ebedf0;
+}
+
 .bola-noSeleccionada{
     background-color: #fff;
     background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#57f4f2));
