@@ -2,11 +2,12 @@ import React from 'react'
 import NumbersBoxHeaderTitle from './NumbersBoxHeaderTitle'
 import LotteryItem from './LotteryItem'
 
-export default function LotteryTable() {
+export default function LotteryTable({content}) {
+
   return (
     <>
         <div class="container py-3">
-            <NumbersBoxHeaderTitle title="KINO" />
+            <NumbersBoxHeaderTitle title={content} />
             <div class="p-5 bg-grey rounded-bottom-3">
                 <div class="table-responsive">
                     <table class="table responsive">

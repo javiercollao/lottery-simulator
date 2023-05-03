@@ -12,6 +12,11 @@ export default function GameGenerator() {
             <div class="p-5 bg-carton rounded-bottom-3">
                 <div class="container">
                   <ButtonsNumber></ButtonsNumber>
+                  <div className="w-100 d-flex px-5 justify-content-around">
+                    <Button>Generar</Button>
+                    <Button>Limpiar</Button>
+                    <Button>Guardar</Button>
+                  </div>
                 </div>
             </div>
         </div>
