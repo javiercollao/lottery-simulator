@@ -15,11 +15,11 @@ export default function NumbersBox({content}) {
   }
 
   return (
-    <div className="container py-5">
+    <div className="container py-3">
         {header}
         <div className="p-5 bg-grey rounded-bottom-3">
             <div className="container">
-              <NumbersContainer />
+              <NumbersContainer type="noTable"/>
             </div>
         </div>
     </div>
