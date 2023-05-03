@@ -8,10 +8,8 @@ export default function NumbersBox({content}) {
 
   if (content === "main") {
     header = <NumbersBoxHeaderMain />;
-  } else if (content === "consecutive") {
-    header = <NumbersBoxHeaderTitle title="Consecutivos" />;
-  }else{
-    header = <NumbersBoxHeaderTitle title="Sueltos" />;
+  } else {
+    header = <NumbersBoxHeaderTitle title={content} />;
   }
 
   return (

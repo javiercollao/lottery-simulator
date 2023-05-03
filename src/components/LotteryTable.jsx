@@ -1,6 +1,4 @@
-import React from 'react'
-import NumbersContainer from './NumbersContainer'
-import NumbersBox from './NumbersBox'
+import React from 'react' 
 import NumbersBoxHeaderTitle from './NumbersBoxHeaderTitle'
 import LotteryItem from './LotteryItem'
 
@@ -26,7 +24,6 @@ export default function LotteryTable() {
                             <LotteryItem />
                             <LotteryItem />
                             <LotteryItem />
-
                         </tbody>
                     </table>
                 </div>
