@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from './components/App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/styles/kino.css';
 import Kino from './routes/Kino';

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Ball(props) {
+export default function Ball({number}) {
   return (
     <>
         <li>
-            <span className="bola">1</span>
+            <span className="bola">{number}</span>
         </li>
     </>
   )

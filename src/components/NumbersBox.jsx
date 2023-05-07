@@ -6,7 +6,7 @@ import NumbersBoxHeaderTitle from './NumbersBoxHeaderTitle'
 export default function NumbersBox({content}) {
   let header;
 
-  if (content === "main") {
+  if (content === "KINO") {
     header = <NumbersBoxHeaderMain />;
   } else {
     header = <NumbersBoxHeaderTitle title={content} />;
@@ -17,7 +17,7 @@ export default function NumbersBox({content}) {
         {header}
         <div className="p-5 bg-grey rounded-bottom-3">
             <div className="container">
-              <NumbersContainer type="noTable"/>
+              <NumbersContainer type="noTable" dataType={content}/>
             </div>
         </div>
     </div>

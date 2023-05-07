@@ -428,15 +428,18 @@ const kinoHistorical = [
         comboMarraqueta: [1,2,6,7,9,10,11,12,13,16,21,22,23,24],
         chaoJefe1 : [3,4,6,9,11,12,14,15,17,19,21,22,23,24],
         chaoJefe2: [6,7,9,10,11,12,13,15,16,17,20,22,23,25]
-    },
-    {
-        id: 0,
-        date : "plantilla",
-        kino:[],
-        reKino: [],
-        chanchitoRegalon: [],
-        comboMarraqueta: [],
-        chaoJefe1 : [],
-        chaoJefe2: []
     }
+    // {
+    //     id: 0,
+    //     date : "plantilla",
+    //     kino:[],
+    //     reKino: [],
+    //     chanchitoRegalon: [],
+    //     comboMarraqueta: [],
+    //     chaoJefe1 : [],
+    //     chaoJefe2: []
+    // }
 ]
+
+
+export default kinoHistorical
