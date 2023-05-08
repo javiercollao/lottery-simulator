@@ -1,32 +1,31 @@
 import React, { useContext } from 'react'
 import Ball from './Ball'
 import { DataContext } from '../context/DataProvider';
+import { findConsecutive } from '../myFunctions/findConsecutive';
+ 
 
 export default function NumbersContainer({type, dataType}) {
     const value = useContext(DataContext); 
     const [lotteries] =  value.lotteriesData;
 
-    let atributes;
+    let attributes;
     if(type === "table"){
-        atributes = "numeros-tabla d-flex list-unstyled"
+        attributes = "numeros-tabla d-flex list-unstyled"
     }else{
-        atributes = "numeros"
+        attributes = "numeros"
     }
 
     let dataLottery
+    let lotteryPrint;
     if(dataType === "KINO"){
-      dataLottery =  lotteries[0].kino
-    }
-    
-
+      dataLottery = lotteries[0].kino
+      const myConsecutive = findConsecutive(dataLottery) 
+      lotteryPrint =  dataLottery.map((ball) => myConsecutive.includes(ball)? <Ball number={ball} type="consecutive" /> : <Ball  number={ball} type="alone" />);
+    } 
+ 
   return (
-    <>
-        <ul className={atributes} >
-            {
-              dataLottery.map((number) => <Ball number={number} />)
-            }
-        </ul>
-    
-    </>
+    <ul className={attributes}>
+        { lotteryPrint }
+    </ul>
   )
 }

@@ -97,4 +97,13 @@
     background-image: radial-gradient(circle, #fff, #57f4f2);
 }
 
+.consecutive{
+    background-color: #fff;
+    background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#808080), to(#57f4f2));
+    background-image: -webkit-radial-gradient(circle, #808080, #57f4f2);
+    background-image: -moz-radial-gradient(circle, #808080, #57f4f2);
+    background-image: -o-radial-gradient(circle, #808080, #57f4f2);
+    background-image: radial-gradient(circle, #808080, #57f4f2);
+}
+
  

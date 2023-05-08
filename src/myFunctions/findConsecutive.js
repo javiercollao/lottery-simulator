@@ -1,4 +1,4 @@
-export default findConsecutive = (arr) => {
+export const findConsecutive = (arr) => {
   let consecutive = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] + 1 === arr[i+1]) {

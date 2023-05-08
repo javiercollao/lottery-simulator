@@ -9,10 +9,8 @@ export default function Kino() {
   return (
     <DataProvider>
       <NavbarKino />
-      <NumbersBox content="KINO"/> 
-      {/* <NumbersBox content="CONSECUTIVOS"/>
-      <NumbersBox content="SUELTOS"/>
-      <LotteryTable content="KINO RESULTADOS"/> */}
+      <NumbersBox content="KINO"/>   
+      <LotteryTable content="KINO RESULTADOS"/>
     </DataProvider>
   )
 }
