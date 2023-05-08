@@ -12,8 +12,7 @@ export default function LotteryTable({content}) {
                 <div class="table-responsive">
                     <table class="table responsive">
                         <thead>
-                            <tr>
-                                <th scope="col">#</th>
+                            <tr> 
                                 <th scope="col">Sorteo</th>
                                 <th scope="col">Numeros</th>
                                 <th scope="col">Fecha</th>

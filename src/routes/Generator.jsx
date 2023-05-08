@@ -8,9 +8,9 @@ export default function Generator() {
   return (
     <>
         <NavbarKino />
-        <NumbersBox content="FAVORITOS"/>
+        {/* <NumbersBox content="FAVORITOS"/>
         <GameGenerator />
-        <LotteryTable content="GENERADOS" />
+        <LotteryTable content="GENERADOS" /> */}
     </>
   )
 }

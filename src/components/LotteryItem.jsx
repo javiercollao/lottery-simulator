@@ -3,8 +3,7 @@ import NumbersContainer from './NumbersContainer'
 
 export default function LotteryItem() {
   return (
-    <tr>
-        <th scope="row">1</th>
+    <tr> 
         <td>2704</td>
         <td> 
             <NumbersContainer type="table" />

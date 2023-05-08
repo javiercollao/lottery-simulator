@@ -14,7 +14,7 @@ export default function NumbersBoxHeaderMain() {
 
   return (
     <>
-        <div className="p-2 bg-primary rounded-top-3 d-flex justify-content-between">
+        <div className="p-2 bg-primary rounded-top d-flex justify-content-between">
             <span className="fw-bold text-light">Sorteo: {dataLotteryId}</span>
             <span className="fw-bold text-light">Juego: KINO</span>
             <span className="fw-bold text-light">Fecha: {dataLotteryDate}</span>
