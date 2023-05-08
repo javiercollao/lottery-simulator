@@ -10,7 +10,7 @@ export default function NumbersBoxHeaderMain() {
    
   dataLotteryDate =  lotteries[0].date
   dataLotteryId =  lotteries[0].id
-  
+   
 
   return (
     <>
