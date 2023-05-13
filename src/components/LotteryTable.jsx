@@ -7,10 +7,8 @@ export default function LotteryTable({content}) {
     const value = useContext(DataContext); 
     const [lotteries] =  value.lotteriesData;
  
-    const items = lotteries.map((lott,idx)=> <LotteryItem idx={idx} number={lott.id} date={lott.date} /> )
-
-    //const items = lotteries[0].id
-
+    const items = lotteries.map((lott,idx)=> <LotteryItem idx={idx} content={content} number={lott.id} date={lott.date} /> )
+ 
   return (
     <>
         <div className="container py-3">

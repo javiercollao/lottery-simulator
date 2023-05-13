@@ -12,7 +12,7 @@ export default function Kino() {
     <DataProvider>
       <NavbarKino />
       <NumbersBox content="KINO" idx={number}/>   
-      <LotteryTable content="KINO RESULTADOS"/>
+      <LotteryTable content="KINO"/>
     </DataProvider>
   )
 }

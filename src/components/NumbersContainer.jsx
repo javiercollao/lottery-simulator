@@ -7,8 +7,7 @@ import { findConsecutive } from '../myFunctions/findConsecutive';
 export default function NumbersContainer({type, dataType, idx}) {
     const value = useContext(DataContext); 
     const [lotteries] =  value.lotteriesData;
-
-    console.log(idx)
+ 
     let attributes;
     if(type === "table"){
         attributes = "numeros-tabla d-flex list-unstyled"

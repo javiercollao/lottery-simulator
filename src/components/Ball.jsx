@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+ 
 
 export default function Ball({number, type}) {
+
+  const [selectState, setSelectstate] = useState()
+ 
 
   let attribute
   if(type === "consecutive"){
@@ -9,10 +13,15 @@ export default function Ball({number, type}) {
     attribute = "bola"
   }
 
+  const handlerDrop = (n) => setSelectstate(n)
+
+  console.log(selectState)
+
   return (
     <>
-        <li>
-            <span className={attribute}>{number}</span>
+        <li onClick={() => handlerDrop(number)}>
+          
+            <span className={attribute} >{number}</span>
         </li>
     </>
   )
