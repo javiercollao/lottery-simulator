@@ -1,16 +1,23 @@
-import React from 'react' 
+import React, { useContext } from 'react' 
 import NumbersBoxHeaderTitle from './NumbersBoxHeaderTitle'
 import LotteryItem from './LotteryItem'
+import { DataContext } from '../context/DataProvider';
 
 export default function LotteryTable({content}) {
+    const value = useContext(DataContext); 
+    const [lotteries] =  value.lotteriesData;
+ 
+    const items = lotteries.map((lott,idx)=> <LotteryItem idx={idx} number={lott.id} date={lott.date} /> )
+
+    //const items = lotteries[0].id
 
   return (
     <>
-        <div class="container py-3">
+        <div className="container py-3">
             <NumbersBoxHeaderTitle title={content} />
-            <div class="p-5 bg-grey rounded-bottom-3">
-                <div class="table-responsive">
-                    <table class="table responsive">
+            <div className="p-5 bg-grey rounded-bottom-3">
+                <div className="table-responsive">
+                    <table className="table responsive">
                         <thead>
                             <tr> 
                                 <th scope="col">Sorteo</th>
@@ -19,11 +26,7 @@ export default function LotteryTable({content}) {
                             </tr>
                         </thead>
                         <tbody>
-                            <LotteryItem />
-                            <LotteryItem />
-                            <LotteryItem />
-                            <LotteryItem />
-                            <LotteryItem />
+                            {items}
                         </tbody>
                     </table>
                 </div>

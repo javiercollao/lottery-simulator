@@ -3,8 +3,8 @@ import NumbersContainer from './NumbersContainer'
 import NumbersBoxHeaderMain from './NumbersBoxHeaderMain'
 import NumbersBoxHeaderTitle from './NumbersBoxHeaderTitle'
 
-export default function NumbersBox({content}) {
-  let header;
+export default function NumbersBox({content, idx}) {
+  let header; 
 
   if (content === "KINO") {
     header = <NumbersBoxHeaderMain />;
@@ -17,7 +17,7 @@ export default function NumbersBox({content}) {
         {header}
         <div className="p-5 bg-grey rounded-bottom-3">
             <div className="container">
-              <NumbersContainer type="noTable" dataType={content}/>
+              <NumbersContainer type="noTable" dataType={content} idx={idx}/>
             </div>
         </div>
     </div>
