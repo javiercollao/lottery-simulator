@@ -106,4 +106,20 @@
     background-image: radial-gradient(circle, #808080, #57f4f2);
 }
 
+.sticky-b{
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+}
+
+@media (max-width: 993px) {
+    /* Estilos para pantallas con un ancho máximo de 768px */
+
+    .numeros{
+        padding: 0;
+        grid-template-columns: repeat(4,minmax(25px,1fr));
+    }
+}
+
+ 
  

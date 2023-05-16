@@ -18,11 +18,8 @@ export default function Ball({number, type}) {
   console.log(selectState)
 
   return (
-    <>
-        <li onClick={() => handlerDrop(number)}>
-          
-            <span className={attribute} >{number}</span>
-        </li>
+    <> 
+      <span className={attribute} >{number}</span>
     </>
   )
 }
