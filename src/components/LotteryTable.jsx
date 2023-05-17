@@ -30,7 +30,6 @@ export default function LotteryTable({content}) {
                 </div>
             </div>
         </div>
-       
     </>
   )
 }

@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { DataContext } from '../context/DataProvider';
  
 
 export default function Ball({number, type}) {
-
-  const [selectState, setSelectstate] = useState()
- 
+  const value = useContext(DataContext); 
+  
+  const setNumberSelection = value.mySelection[1]
+  const setButtonState = value.btnState[1]
+  const favoritesColletion = value.myFavoritesNumbers[0]
 
   let attribute
   if(type === "consecutive"){
@@ -13,13 +16,18 @@ export default function Ball({number, type}) {
     attribute = "bola"
   }
 
-  const handlerDrop = (n) => setSelectstate(n)
-
-  console.log(selectState)
+  const handlerSelection = (n) => {
+    if(favoritesColletion.length === 6){
+      setButtonState(true)
+    }else{
+      setNumberSelection(n)
+      setButtonState(false)
+    }
+  }
 
   return (
     <> 
-      <span className={attribute} >{number}</span>
+      <span className={attribute} onClick={() => handlerSelection(number)}>{number}</span>
     </>
   )
 }

@@ -1,12 +1,47 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import Ball from './Ball'
+import { DataContext } from '../context/DataProvider'; 
 
 export default function Collector() {
+    const value = useContext(DataContext); 
+
+    const numberSelection =  value.mySelection[0];
+    const setNumberSelection = value.mySelection[1]
+ 
+    const favoritesColletion = value.myFavoritesNumbers[0]
+    const addFavoriteNumber = value.addFavoriteFn 
+
+    const buttonState = value.btnState[0]
+    const setButtonState = value.btnState[1]
+
+  
+    console.log(numberSelection)
+ 
+    const sendFavorite = (myNumber) => {
+        addFavoriteNumber(myNumber)
+        setNumberSelection()
+        setButtonState(true)
+    }
+ 
+    let attribute
+    if(favoritesColletion.includes(numberSelection)){
+        attribute = "consecutive"
+        setButtonState(true)
+    }else if(numberSelection === undefined){
+        attribute = "alone"
+        setButtonState(true)
+    }else{
+        attribute = "alone"
+        setButtonState(false)
+    }
+        
+     
+    console.log(favoritesColletion)
   return (
     <div className="z-2 alert alert-dark alert-dismissible mb-0 px-2 rounded-0 sticky-b fade show" role="alert">
         <div className="container d-flex  justify-content-center">
-            <Ball number="8" />
-            <button className="btn btn-primary ms-5 btn-lg w-fit" type="button">Agregar favorito</button>
+        <Ball number={numberSelection} type={attribute} />
+            <button className="btn btn-primary ms-5 btn-lg w-fit" disabled={buttonState} type="button" onClick={() => sendFavorite(numberSelection)}>Agregar favorito</button>
         </div>
     </div>
   )

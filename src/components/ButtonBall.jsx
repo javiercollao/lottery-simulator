@@ -12,8 +12,6 @@ export default function ButtonBall({number}) {
         style = "bola bola-noSeleccionada"
     }
     
-    
-    
   return (
     <li>
         <li>
