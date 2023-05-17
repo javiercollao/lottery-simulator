@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/styles/kino.css';
 import Kino from './routes/Kino';
 import Generator from './routes/Generator';
+import DataProvider from './context/DataProvider';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <DataProvider>
+      <RouterProvider router={router} />
+    </DataProvider>
   </React.StrictMode>
 );

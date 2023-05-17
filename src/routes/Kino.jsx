@@ -10,11 +10,11 @@ export default function Kino() {
   const number=0
 
   return (
-    <DataProvider>
+    <>
       <NavbarKino />
       <NumbersBox content="KINO" idx={number}/>   
       <LotteryTable content="KINO"/>
       <Collector></Collector>
-    </DataProvider>
+    </>
   )
 }

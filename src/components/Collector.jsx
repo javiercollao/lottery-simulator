@@ -14,9 +14,6 @@ export default function Collector() {
     const buttonState = value.btnState[0]
     const setButtonState = value.btnState[1]
 
-  
-    console.log(numberSelection)
- 
     const sendFavorite = (myNumber) => {
         addFavoriteNumber(myNumber)
         setNumberSelection()
@@ -35,8 +32,6 @@ export default function Collector() {
         setButtonState(false)
     }
         
-     
-    console.log(favoritesColletion)
   return (
     <div className="z-2 alert alert-dark alert-dismissible mb-0 px-2 rounded-0 sticky-b fade show" role="alert">
         <div className="container d-flex  justify-content-center">
