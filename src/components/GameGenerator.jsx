@@ -7,16 +7,21 @@ import { generateRandomNumbers } from '../myFunctions/randomNumbersKino';
 export default function GameGenerator() {
   const value = useContext(DataContext); 
   const favoritesColletion = value.myFavoritesNumbers[0]
-  const setGameSelectedNumbers = value.gameSelection[1]
-  console.log(favoritesColletion)
+  const setGameSelectedNumbers = value.gameSelection[1] 
+  const gameSelectedNumbers = value.gameSelection[0] 
+  const addTicket = value.addTicketFn
 
-  const handlerGenerateBtn = (fav) => {
-    setGameSelectedNumbers(generateRandomNumbers(fav))
-  }
+  console.log(value.myTickets[0])
+  const handlerGenerateBtn = (fav) => setGameSelectedNumbers(generateRandomNumbers(fav))
 
   const handleCleanBtn = () => setGameSelectedNumbers([])
 
- 
+  const handleSendMyTicket = () => {
+    addTicket(gameSelectedNumbers)
+    setGameSelectedNumbers([])
+  }
+
+
   return (
     <>
         <div className="container py-5">
@@ -29,7 +34,7 @@ export default function GameGenerator() {
                   <div className="w-100 d-flex px-5 justify-content-around">
                     <Button onClick={() => handlerGenerateBtn(favoritesColletion)}>Generar</Button>
                     <Button onClick={() => handleCleanBtn()}>Limpiar</Button>
-                    <Button>Guardar</Button>
+                    <Button onClick={() => handleSendMyTicket()}>Guardar</Button>
                   </div>
                 </div>
             </div>

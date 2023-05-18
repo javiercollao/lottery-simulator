@@ -4,7 +4,6 @@ import { settings } from '../data/settings';
 
 export default function ButtonBall({number, selected}) {
     
-    
     const value = useContext(DataContext); 
     const [buttonStyleState, setState] = useState(selected)
     const gameSelectedNumbers = value.gameSelection[0]

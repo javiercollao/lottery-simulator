@@ -8,11 +8,9 @@ export default function ButtonsNumber() {
   const value = useContext(DataContext);
   const numbersGenerated = value.gameSelection[0]
  
-  console.log(numbersGenerated.length)
   
   let userButtons = settings.numbersToChoose.map((n) =>  numbersGenerated.includes(n)? <li><ButtonBall number={n} selected={true}></ButtonBall></li> : <li><ButtonBall number={n} selected={false}></ButtonBall></li>)
- 
-  console.log(numbersGenerated)
+  
   return (
     <>
         <ul className='numeros'>

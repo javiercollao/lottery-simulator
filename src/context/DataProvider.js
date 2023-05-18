@@ -36,6 +36,12 @@ export default function DataProvider(props) {
 	const removeGameNumber = (numberDelete) => {
 		setGameSelectedNumbers(gameSelectedNumbers.filter((number) => number != numberDelete))
 	}
+
+	// Agregar Ticket
+	const addTicket = (ticket) => {
+		setGenTicket([ticket, ...myGenTickets])
+	} 
+
  
 
     const value = { 
@@ -48,7 +54,8 @@ export default function DataProvider(props) {
 		addFavoriteFn : addFavorite, 
 		removeNumberFn: removeNumber,
 		removeGameNumberFn: removeGameNumber,
-		addGameSelectionFn: addGameSelection
+		addGameSelectionFn: addGameSelection,
+		addTicketFn: addTicket
 	}
 
     return (
