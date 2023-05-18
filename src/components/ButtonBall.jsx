@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react' 
-import DataProvider, { DataContext } from '../context/DataProvider';
+import { DataContext } from '../context/DataProvider';
 import { settings } from '../data/settings';
 
 export default function ButtonBall({number, selected}) {
@@ -11,9 +11,7 @@ export default function ButtonBall({number, selected}) {
     const removeGameNumber = value.removeGameNumberFn
     const addGameSelection = value.addGameSelectionFn
     
-   
-    let style
-    style = selected ? "bola":  "bola bola-noSeleccionada" ;
+    let style = selected ? "bola":  "bola bola-noSeleccionada" ;
  
     const styleButtonHandle = () => {
         if( gameSelectedNumbers.length < settings.numbersToChooseCount){

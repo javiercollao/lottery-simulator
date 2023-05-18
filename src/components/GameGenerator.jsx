@@ -9,8 +9,9 @@ export default function GameGenerator() {
   const [na, setna] = useState(value.gameSelection[0].length)
   const favoritesColletion = value.myFavoritesNumbers[0]
   const setGameSelectedNumbers = value.gameSelection[1]
-  const handlerGenerateBtn = () => {
-    setGameSelectedNumbers(generateRandomNumbers(favoritesColletion))
+  console.log(favoritesColletion)
+  const handlerGenerateBtn = (fav) => {
+    setGameSelectedNumbers(generateRandomNumbers(fav))
     setna(value.gameSelection[0].length)
   }
 
@@ -25,7 +26,7 @@ export default function GameGenerator() {
                 <div className="container">
                   <ButtonsNumber></ButtonsNumber>
                   <div className="w-100 d-flex px-5 justify-content-around">
-                    <Button onClick={() => handlerGenerateBtn()}>Generar</Button>
+                    <Button onClick={() => handlerGenerateBtn(favoritesColletion)}>Generar</Button>
                     <Button>Limpiar</Button>
                     <Button>Guardar</Button>
                   </div>
