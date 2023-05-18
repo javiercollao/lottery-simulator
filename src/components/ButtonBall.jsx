@@ -3,9 +3,9 @@ import DataProvider, { DataContext } from '../context/DataProvider';
 import { settings } from '../data/settings';
 
 export default function ButtonBall({number, selected}) {
-    const [buttonStyleState, setState] = useState(selected)
-
+    
     const value = useContext(DataContext); 
+    const [buttonStyleState, setState] = useState(selected)
     const gameSelectedNumbers = value.gameSelection[0]
     const removeGameNumber = value.removeGameNumberFn
     const addGameSelection = value.addGameSelectionFn

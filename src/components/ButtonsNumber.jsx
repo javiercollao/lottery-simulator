@@ -3,14 +3,14 @@ import ButtonBall from './ButtonBall'
 import { settings } from '../data/settings'
 import { DataContext } from '../context/DataProvider';
 
-export default function ButtonsNumber() {
+export default function ButtonsNumber(props) {
  
   const value = useContext(DataContext);
   const numbersGenerated = value.gameSelection[0]
  
   console.log(numbersGenerated)
-
-  const userButtons = settings.numbersToChoose.map((n) =>  numbersGenerated.includes(n)? <li><ButtonBall number={n} selected={true}></ButtonBall></li> : <li><ButtonBall number={n} selected={false}></ButtonBall></li>)
+ 
+  const userButtons = settings.numbersToChoose.map((n) =>  props.numbersGenerated.includes(n)? <li><ButtonBall number={n} selected={true}></ButtonBall></li> : <li><ButtonBall number={n} selected={false}></ButtonBall></li>)
  
   return (
     <>
