@@ -1,8 +1,7 @@
 import React from 'react'
 import NavbarKino from './../components/NavbarKino'
 import NumbersBox from './../components/NumbersBox'
-import LotteryTable from './../components/LotteryTable'
-import DataProvider from '../context/DataProvider'
+import LotteryTable from './../components/LotteryTable' 
 import Collector from '../components/Collector'
 
 export default function Kino() {

@@ -1,8 +1,6 @@
 import React from 'react'
 import NavbarKino from '../components/NavbarKino'
 import GameGenerator from './../components/GameGenerator'
-import LotteryTable from './../components/LotteryTable'
-import NumbersBox from './../components/NumbersBox' 
 import NumbersBoxFavorites from '../components/NumbersBoxFavorites'
 
 export default function Generator() {
