@@ -17,8 +17,10 @@ export default function GameGenerator() {
   const handleCleanBtn = () => setGameSelectedNumbers([])
 
   const handleSendMyTicket = () => {
-    addTicket(gameSelectedNumbers)
-    setGameSelectedNumbers([])
+    if(gameSelectedNumbers.length === 14){
+      addTicket(gameSelectedNumbers)
+      setGameSelectedNumbers([])
+    }
   }
 
 

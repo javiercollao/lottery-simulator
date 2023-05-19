@@ -2,6 +2,7 @@ import React from 'react'
 import NavbarKino from '../components/NavbarKino'
 import GameGenerator from './../components/GameGenerator'
 import NumbersBoxFavorites from '../components/NumbersBoxFavorites'
+import ContainerTickets from '../components/ContainerTickets'
 
 export default function Generator() {
   return (
@@ -9,6 +10,7 @@ export default function Generator() {
       <NavbarKino />
       <NumbersBoxFavorites />
       <GameGenerator />
+      <ContainerTickets />
     </>
   )
 }
