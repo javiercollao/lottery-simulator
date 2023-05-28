@@ -18,7 +18,7 @@ export default function NumbersContainer({type, dataType, idx}) {
     let dataLottery
     let lotteryPrint;
     if(dataType === "KINO"){
-      dataLottery = lotteries[idx].kino
+      dataLottery = lotteries[idx].reKino
       const myConsecutive = findConsecutive(dataLottery) 
       lotteryPrint =  dataLottery.map((ball) => myConsecutive.includes(ball)?  <li><Ball number={ball} type="consecutive" /></li> : <li><Ball  number={ball} type="alone" /></li>);
     }
