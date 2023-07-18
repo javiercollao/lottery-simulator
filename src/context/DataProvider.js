@@ -6,17 +6,23 @@ export const DataContext = createContext();
 
 export default function DataProvider(props) {
     
-	// vista KINO
+	// Datos de los sorteos
     const [lotteries, setLotteries] = useState(Data); 
+
+	// Datos de los numeros favoritos
 	const [favoriteNumbers, setFavoriteNumbers] = useState([])
+
+	// Numero seleccionado para agregar a favorito
 	const [selectedNumberForFavorite , setSelectedNumberForFavorite] = useState()
+
+	// 
 	const [buttonAddFState, setButtonAddFState] = useState(true)
 
 	// vista Generador
 	const [gameSelectedNumbers, setGameSelectedNumbers] = useState([]) 
-
 	const [myGenTickets, setGenTicket] = useState([])
 
+	
 	// Añade favoritos
 	const addFavorite = (number) => {
 		setFavoriteNumbers([number, ...favoriteNumbers])

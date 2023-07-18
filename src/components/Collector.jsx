@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Ball from './Ball'
 import { DataContext } from '../context/DataProvider'; 
 
@@ -19,17 +19,23 @@ export default function Collector() {
         setNumberSelection()
         setButtonState(true)
     }
- 
+
     let attribute
     if(favoritesColletion.includes(numberSelection)){
         attribute = "consecutive"
-        setButtonState(true)
+        useEffect(() => { 
+            setButtonState(true)
+        }, []);
     }else if(numberSelection === undefined){
         attribute = "alone"
-        setButtonState(true)
+        useEffect(() => { 
+            setButtonState(true)
+        }, []);
     }else{
         attribute = "alone"
-        setButtonState(false)
+        useEffect(() => { 
+            setButtonState(false)
+        }, []);
     }
         
   return (

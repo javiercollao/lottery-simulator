@@ -3,7 +3,12 @@ import Ball from './Ball';
 import NumbersBoxHeaderTitle from './NumbersBoxHeaderTitle';
 
 export default function NumberBoxTicket({data, idx}) {
-  const numbers = data.map((ball) => <li><Ball number={ball} type="alone"/></li>);
+  const numbers = data.map((ball, index) => (
+    <li key={index}>
+      <Ball number={ball} type="alone" />
+    </li>
+  ));
+  
   return (
     <div className="container py-3">
         <NumbersBoxHeaderTitle title={"Ticket "+ idx} />

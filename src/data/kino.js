@@ -1,7 +1,4 @@
-const kinoHistorical = [
-    {
-
-    },
+const kinoHistorical = [ 
     {
         id: 2769,
         date : "11/06/2023",

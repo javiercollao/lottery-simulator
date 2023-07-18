@@ -9,8 +9,17 @@ export default function ButtonsNumber() {
   const numbersGenerated = value.gameSelection[0]
  
   
-  let userButtons = settings.numbersToChoose.map((n) =>  numbersGenerated.includes(n)? <li><ButtonBall number={n} selected={true}></ButtonBall></li> : <li><ButtonBall number={n} selected={false}></ButtonBall></li>)
-  
+  let userButtons = settings.numbersToChoose.map((n, index) =>
+  numbersGenerated.includes(n) ? (
+      <li key={index}>
+        <ButtonBall number={n} selected={true} />
+      </li>
+    ) : (
+      <li key={index}>
+        <ButtonBall number={n} selected={false} />
+      </li>
+    )
+  );  
   return (
     <>
         <ul className='numeros'>
