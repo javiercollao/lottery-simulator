@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lottery-simulator/static/css/main.53175147.css",
-    "main.js": "/lottery-simulator/static/js/main.9c58979a.js",
+    "main.js": "/lottery-simulator/static/js/main.ab2e2d74.js",
     "index.html": "/lottery-simulator/index.html",
     "main.53175147.css.map": "/lottery-simulator/static/css/main.53175147.css.map",
-    "main.9c58979a.js.map": "/lottery-simulator/static/js/main.9c58979a.js.map"
+    "main.ab2e2d74.js.map": "/lottery-simulator/static/js/main.ab2e2d74.js.map"
   },
   "entrypoints": [
     "static/css/main.53175147.css",
-    "static/js/main.9c58979a.js"
+    "static/js/main.ab2e2d74.js"
   ]
 }
