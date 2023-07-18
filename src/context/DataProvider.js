@@ -1,7 +1,6 @@
 import React, { createContext, useState } from "react";
 import Data from './../data/kino' 
  
-
 export const DataContext = createContext();
 
 export default function DataProvider(props) {
@@ -15,14 +14,15 @@ export default function DataProvider(props) {
 	// Numero seleccionado para agregar a favorito
 	const [selectedNumberForFavorite , setSelectedNumberForFavorite] = useState()
 
-	// 
+	// Estado condicional del boton agregar numero, esto evita se agregue el mismo numero a favoritos
 	const [buttonAddFState, setButtonAddFState] = useState(true)
 
-	// vista Generador
+	// Esto representa un ticket generado en la vista generador
 	const [gameSelectedNumbers, setGameSelectedNumbers] = useState([]) 
+
+	// Acumulador de los tickets generados
 	const [myGenTickets, setGenTicket] = useState([])
 
-	
 	// Añade favoritos
 	const addFavorite = (number) => {
 		setFavoriteNumbers([number, ...favoriteNumbers])
@@ -47,8 +47,6 @@ export default function DataProvider(props) {
 	const addTicket = (ticket) => {
 		setGenTicket([ticket, ...myGenTickets])
 	} 
-
- 
 
     const value = { 
 	    lotteriesData : [lotteries, setLotteries], 

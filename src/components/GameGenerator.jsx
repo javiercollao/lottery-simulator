@@ -10,8 +10,7 @@ export default function GameGenerator() {
   const setGameSelectedNumbers = value.gameSelection[1] 
   const gameSelectedNumbers = value.gameSelection[0] 
   const addTicket = value.addTicketFn
-
-  console.log(value.myTickets[0])
+ 
   const handlerGenerateBtn = (fav) => setGameSelectedNumbers(generateRandomNumbers(fav))
 
   const handleCleanBtn = () => setGameSelectedNumbers([])
@@ -22,7 +21,6 @@ export default function GameGenerator() {
       setGameSelectedNumbers([])
     }
   }
-
 
   return (
     <>
