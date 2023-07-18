@@ -2,7 +2,7 @@
 
 Una aplicación sencilla que simula el juego de lotería Kino! Este proyecto ha sido diseñado para ofrecer una experiencia divertida e interactiva, permitiéndote generar números de Kino aleatorios, guardar tus números favoritos y simular el sorteo de la lotería.
 
-#### [Play demo](https://javiercollao.github.io/labyrinth-game/) 
+#### [Play demo](https://javiercollao.github.io/lottery-simulator/) 
 
 #### Características
 
